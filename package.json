@@ -1,0 +1,11 @@
+{
+  "name": "exa-searchbench3",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Public research artifact for SearchBench-3",
+  "scripts": {
+    "verify": "node scripts/verify_results.mjs",
+    "manifest": "node scripts/build_manifest.mjs"
+  }
+}

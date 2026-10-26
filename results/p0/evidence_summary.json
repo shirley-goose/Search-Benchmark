@@ -1,0 +1,262 @@
+{
+  "methodology": {
+    "metric_name": "LLM-judge evidence support and answer completeness",
+    "not_accuracy": true,
+    "canonical_rows": 240
+  },
+  "providerSummary": [
+    {
+      "provider": "exa_lite",
+      "n": 60,
+      "score_total": 877,
+      "score_max": 960,
+      "score_pct": 91.35,
+      "mean_score_0_16": 14.62,
+      "dimensions": {
+        "groundedness": 3.78,
+        "authority": 3.78,
+        "completeness": 3.37,
+        "confidence": 3.68
+      },
+      "latency_ms": {
+        "p50": 582,
+        "p90": 1066
+      },
+      "expected_authoritative_domain_coverage_pct": 100,
+      "estimated_retrieval_cost_usd": 0.24,
+      "judge_tokens": {
+        "inputTokens": 57167,
+        "outputTokens": 8849,
+        "totalTokens": 66016
+      }
+    },
+    {
+      "provider": "exa_auto",
+      "n": 60,
+      "score_total": 872,
+      "score_max": 960,
+      "score_pct": 90.83,
+      "mean_score_0_16": 14.53,
+      "dimensions": {
+        "groundedness": 3.8,
+        "authority": 3.73,
+        "completeness": 3.35,
+        "confidence": 3.65
+      },
+      "latency_ms": {
+        "p50": 1333,
+        "p90": 2063
+      },
+      "expected_authoritative_domain_coverage_pct": 98.3,
+      "estimated_retrieval_cost_usd": 0.42,
+      "judge_tokens": {
+        "inputTokens": 56082,
+        "outputTokens": 8660,
+        "totalTokens": 64742
+      }
+    },
+    {
+      "provider": "deepseek_search",
+      "n": 60,
+      "score_total": 721,
+      "score_max": 960,
+      "score_pct": 75.1,
+      "mean_score_0_16": 12.02,
+      "dimensions": {
+        "groundedness": 3.42,
+        "authority": 2.77,
+        "completeness": 2.78,
+        "confidence": 3.05
+      },
+      "latency_ms": {
+        "p50": 565,
+        "p90": 699
+      },
+      "expected_authoritative_domain_coverage_pct": 75,
+      "estimated_retrieval_cost_usd": 0.045,
+      "judge_tokens": {
+        "inputTokens": 64053,
+        "outputTokens": 8868,
+        "totalTokens": 72921
+      }
+    },
+    {
+      "provider": "tencent_yuanbao_searchpro",
+      "n": 60,
+      "score_total": 711,
+      "score_max": 960,
+      "score_pct": 74.06,
+      "mean_score_0_16": 11.85,
+      "dimensions": {
+        "groundedness": 3.37,
+        "authority": 2.75,
+        "completeness": 2.68,
+        "confidence": 3.05
+      },
+      "latency_ms": {
+        "p50": 1005,
+        "p90": 1230
+      },
+      "expected_authoritative_domain_coverage_pct": 75,
+      "estimated_retrieval_cost_usd": 0.179477,
+      "price_usd_per_1000_calls": 2.99128,
+      "judge_tokens": {
+        "inputTokens": 67289,
+        "outputTokens": 8766,
+        "totalTokens": 76055
+      }
+    }
+  ],
+  "categorySummary": [
+    {
+      "category": "academic",
+      "providers": {
+        "deepseek_search": {
+          "mean_score_0_16": 10.7,
+          "score_pct": 66.88,
+          "n": 10
+        },
+        "tencent_yuanbao_searchpro": {
+          "mean_score_0_16": 11.6,
+          "score_pct": 72.5,
+          "n": 10
+        },
+        "exa_lite": {
+          "mean_score_0_16": 13.7,
+          "score_pct": 85.63,
+          "n": 10
+        },
+        "exa_auto": {
+          "mean_score_0_16": 13.1,
+          "score_pct": 81.88,
+          "n": 10
+        }
+      }
+    },
+    {
+      "category": "chinese_web",
+      "providers": {
+        "deepseek_search": {
+          "mean_score_0_16": 14.9,
+          "score_pct": 93.13,
+          "n": 10
+        },
+        "tencent_yuanbao_searchpro": {
+          "mean_score_0_16": 14.3,
+          "score_pct": 89.38,
+          "n": 10
+        },
+        "exa_lite": {
+          "mean_score_0_16": 15.6,
+          "score_pct": 97.5,
+          "n": 10
+        },
+        "exa_auto": {
+          "mean_score_0_16": 15.4,
+          "score_pct": 96.25,
+          "n": 10
+        }
+      }
+    },
+    {
+      "category": "commerce_local",
+      "providers": {
+        "deepseek_search": {
+          "mean_score_0_16": 12.6,
+          "score_pct": 78.75,
+          "n": 10
+        },
+        "tencent_yuanbao_searchpro": {
+          "mean_score_0_16": 11.6,
+          "score_pct": 72.5,
+          "n": 10
+        },
+        "exa_lite": {
+          "mean_score_0_16": 15.2,
+          "score_pct": 95,
+          "n": 10
+        },
+        "exa_auto": {
+          "mean_score_0_16": 15.3,
+          "score_pct": 95.63,
+          "n": 10
+        }
+      }
+    },
+    {
+      "category": "current_news",
+      "providers": {
+        "deepseek_search": {
+          "mean_score_0_16": 12.1,
+          "score_pct": 75.63,
+          "n": 10
+        },
+        "tencent_yuanbao_searchpro": {
+          "mean_score_0_16": 12.6,
+          "score_pct": 78.75,
+          "n": 10
+        },
+        "exa_lite": {
+          "mean_score_0_16": 13.2,
+          "score_pct": 82.5,
+          "n": 10
+        },
+        "exa_auto": {
+          "mean_score_0_16": 13.8,
+          "score_pct": 86.25,
+          "n": 10
+        }
+      }
+    },
+    {
+      "category": "finance_regulatory",
+      "providers": {
+        "deepseek_search": {
+          "mean_score_0_16": 11.5,
+          "score_pct": 71.88,
+          "n": 10
+        },
+        "tencent_yuanbao_searchpro": {
+          "mean_score_0_16": 11,
+          "score_pct": 68.75,
+          "n": 10
+        },
+        "exa_lite": {
+          "mean_score_0_16": 15.4,
+          "score_pct": 96.25,
+          "n": 10
+        },
+        "exa_auto": {
+          "mean_score_0_16": 15.2,
+          "score_pct": 95,
+          "n": 10
+        }
+      }
+    },
+    {
+      "category": "technical_docs",
+      "providers": {
+        "deepseek_search": {
+          "mean_score_0_16": 10.3,
+          "score_pct": 64.38,
+          "n": 10
+        },
+        "tencent_yuanbao_searchpro": {
+          "mean_score_0_16": 10,
+          "score_pct": 62.5,
+          "n": 10
+        },
+        "exa_lite": {
+          "mean_score_0_16": 14.6,
+          "score_pct": 91.25,
+          "n": 10
+        },
+        "exa_auto": {
+          "mean_score_0_16": 14.4,
+          "score_pct": 90,
+          "n": 10
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "reconciliation_date": "2026-10-25",
+  "comparison_currency": "USD",
+  "price_usd_per_1000_calls": 2.99128,
+  "price_usd_per_call": 0.00299128,
+  "conversion_reference": {
+    "original_account_rate": "20 CNY per 1,000 calls",
+    "exchange_rate_cny_per_usd": 6.6861,
+    "source": "Federal Reserve H.10, 2026-10-16"
+  },
+  "canonical_experiment_cohorts": [
+    {
+      "stage": "P0 retrieval",
+      "tencent_calls": 60,
+      "retrieval_cost_usd": 0.179477
+    },
+    {
+      "stage": "Agentic-20",
+      "tencent_calls": 60,
+      "retrieval_cost_usd": 0.179477,
+      "model_cost_usd": 1.728378,
+      "total_cost_usd": 1.907855
+    },
+    {
+      "stage": "P1 adaptive comparison",
+      "tencent_calls": 41,
+      "retrieval_cost_usd": 0.122642,
+      "model_cost_usd": 1.362396,
+      "total_cost_usd": 1.485038
+    },
+    {
+      "stage": "P0 temporal repeat",
+      "elapsed_hours": 92.23,
+      "tencent_calls": 60,
+      "retrieval_cost_usd": 0.179477
+    },
+    {
+      "stage": "Agentic-20 temporal repeat",
+      "elapsed_hours": 53.31,
+      "tencent_calls": 60,
+      "retrieval_cost_usd": 0.179477,
+      "model_cost_usd": 1.719105,
+      "total_cost_usd": 1.898582
+    }
+  ],
+  "published_cohort_total": {
+    "tencent_calls": 281,
+    "retrieval_cost_usd": 0.84055
+  },
+  "note": "All provider comparisons are reported in U.S. dollars."
+}

@@ -1,0 +1,297 @@
+{
+  "metadata": {
+    "generated_at": "2026-10-25T23:29:26.610Z",
+    "p0": {
+      "baseline_started_at": "2026-10-22T02:38:45.253Z",
+      "repeat_started_at": "2026-10-25T22:52:47.871Z",
+      "elapsed_hours": 92.23,
+      "repeat_tencent_auth_mode": "bearer_wsa",
+      "tencent_authentication_equivalence": "Account owner confirmed both authentication paths invoke the same underlying SearchPro model without retrieval-behavior differences."
+    },
+    "agentic20": {
+      "baseline_started_at": "2026-10-23T17:37:10.286Z",
+      "repeat_started_at": "2026-10-25T22:55:34.014Z",
+      "elapsed_hours": 53.31
+    }
+  },
+  "p0_provider_summary": [
+    {
+      "provider": "deepseek_search",
+      "baseline_success": 60,
+      "repeat_success": 60,
+      "baseline_latency_ms": {
+        "p50": 565,
+        "p90": 699
+      },
+      "repeat_latency_ms": {
+        "p50": 541,
+        "p90": 636
+      },
+      "baseline_expected_domain_rate": 0.75,
+      "repeat_expected_domain_rate": 0.7333333333333333,
+      "expected_domain_rate_delta": -0.01666666666666672,
+      "expected_domain_gains": 3,
+      "expected_domain_losses": 4,
+      "mean_url_retention": 0.6038888888888889,
+      "mean_url_jaccard": 0.46045782133243424,
+      "exact_url_set_matches": 0,
+      "mean_domain_retention": 0.700072751322751
+    },
+    {
+      "provider": "tencent_yuanbao_searchpro",
+      "baseline_success": 60,
+      "repeat_success": 60,
+      "baseline_latency_ms": {
+        "p50": 1005,
+        "p90": 1230
+      },
+      "repeat_latency_ms": {
+        "p50": 727,
+        "p90": 1165
+      },
+      "baseline_expected_domain_rate": 0.75,
+      "repeat_expected_domain_rate": 0.7666666666666667,
+      "expected_domain_rate_delta": 0.01666666666666672,
+      "expected_domain_gains": 1,
+      "expected_domain_losses": 0,
+      "mean_url_retention": 0.658148148148148,
+      "mean_url_jaccard": 0.5200036115844938,
+      "exact_url_set_matches": 1,
+      "mean_domain_retention": 0.8031812169312167
+    },
+    {
+      "provider": "exa_lite",
+      "baseline_success": 60,
+      "repeat_success": 60,
+      "baseline_latency_ms": {
+        "p50": 582,
+        "p90": 1066
+      },
+      "repeat_latency_ms": {
+        "p50": 598,
+        "p90": 965
+      },
+      "baseline_expected_domain_rate": 1,
+      "repeat_expected_domain_rate": 0.9833333333333333,
+      "expected_domain_rate_delta": -0.01666666666666672,
+      "expected_domain_gains": 0,
+      "expected_domain_losses": 1,
+      "mean_url_retention": 0.8166666666666665,
+      "mean_url_jaccard": 0.7081848706848707,
+      "exact_url_set_matches": 8,
+      "mean_domain_retention": 0.8516402116402115
+    },
+    {
+      "provider": "exa_auto",
+      "baseline_success": 60,
+      "repeat_success": 60,
+      "baseline_latency_ms": {
+        "p50": 1333,
+        "p90": 2063
+      },
+      "repeat_latency_ms": {
+        "p50": 1553,
+        "p90": 2195
+      },
+      "baseline_expected_domain_rate": 0.9833333333333333,
+      "repeat_expected_domain_rate": 1,
+      "expected_domain_rate_delta": 0.01666666666666672,
+      "expected_domain_gains": 1,
+      "expected_domain_losses": 0,
+      "mean_url_retention": 0.7999999999999996,
+      "mean_url_jaccard": 0.6853088088382205,
+      "exact_url_set_matches": 6,
+      "mean_domain_retention": 0.8558002645502644
+    }
+  ],
+  "agentic20_provider_summary": [
+    {
+      "provider": "deepseek_search",
+      "baseline": {
+        "completed": 20,
+        "usable_calls": 60,
+        "attempted_calls": 60,
+        "session_latency_ms": {
+          "p50": 14583,
+          "p90": 18495
+        },
+        "retrieval_latency_ms": {
+          "p50": 533,
+          "p90": 616
+        },
+        "expected_domain_rate": 0.9,
+        "input_tokens": 439874,
+        "output_tokens": 9989,
+        "model_estimated_usd": 1.469457,
+        "retrieval_estimated_usd": 0.045,
+        "estimated_usd": 1.514457
+      },
+      "repeat": {
+        "completed": 20,
+        "usable_calls": 60,
+        "attempted_calls": 60,
+        "session_latency_ms": {
+          "p50": 14490,
+          "p90": 17569
+        },
+        "retrieval_latency_ms": {
+          "p50": 526,
+          "p90": 628
+        },
+        "expected_domain_rate": 0.9,
+        "input_tokens": 430770,
+        "output_tokens": 9860,
+        "model_estimated_usd": 1.44021,
+        "retrieval_estimated_usd": 0.045,
+        "estimated_usd": 1.48521
+      },
+      "input_token_delta_pct": -0.020696835912102102,
+      "cost_usd_delta_pct": -0.019311872175968036,
+      "mean_url_retention": 0.5806009004351546,
+      "mean_query_retention": 0.5499999999999999,
+      "expected_domain_gains": 0,
+      "expected_domain_losses": 0
+    },
+    {
+      "provider": "tencent_yuanbao_searchpro",
+      "baseline": {
+        "completed": 20,
+        "usable_calls": 60,
+        "attempted_calls": 60,
+        "session_latency_ms": {
+          "p50": 15859,
+          "p90": 19295
+        },
+        "retrieval_latency_ms": {
+          "p50": 946,
+          "p90": 1246
+        },
+        "expected_domain_rate": 0.95,
+        "input_tokens": 525651,
+        "output_tokens": 10095,
+        "model_estimated_usd": 1.728378,
+        "retrieval_estimated_usd": 0.179477,
+        "estimated_usd": 1.907855
+      },
+      "repeat": {
+        "completed": 20,
+        "usable_calls": 60,
+        "attempted_calls": 60,
+        "session_latency_ms": {
+          "p50": 15585,
+          "p90": 18061
+        },
+        "retrieval_latency_ms": {
+          "p50": 790,
+          "p90": 1078
+        },
+        "expected_domain_rate": 0.9,
+        "input_tokens": 522185,
+        "output_tokens": 10170,
+        "model_estimated_usd": 1.719105,
+        "retrieval_estimated_usd": 0.179477,
+        "estimated_usd": 1.898582
+      },
+      "input_token_delta_pct": -0.006593728538517001,
+      "cost_usd_delta_pct": -0.004860432265554817,
+      "mean_url_retention": 0.8136876731048396,
+      "mean_query_retention": 0.6833333333333333,
+      "expected_domain_gains": 0,
+      "expected_domain_losses": 1
+    },
+    {
+      "provider": "exa_lite",
+      "baseline": {
+        "completed": 20,
+        "usable_calls": 60,
+        "attempted_calls": 60,
+        "session_latency_ms": {
+          "p50": 16022,
+          "p90": 18481
+        },
+        "retrieval_latency_ms": {
+          "p50": 614,
+          "p90": 1133
+        },
+        "expected_domain_rate": 1,
+        "input_tokens": 368269,
+        "output_tokens": 10139,
+        "model_estimated_usd": 1.256892,
+        "retrieval_estimated_usd": 0.24,
+        "estimated_usd": 1.496892
+      },
+      "repeat": {
+        "completed": 20,
+        "usable_calls": 60,
+        "attempted_calls": 60,
+        "session_latency_ms": {
+          "p50": 14598,
+          "p90": 17897
+        },
+        "retrieval_latency_ms": {
+          "p50": 652,
+          "p90": 1026
+        },
+        "expected_domain_rate": 1,
+        "input_tokens": 362918,
+        "output_tokens": 10039,
+        "model_estimated_usd": 1.239339,
+        "retrieval_estimated_usd": 0.24,
+        "estimated_usd": 1.479339
+      },
+      "input_token_delta_pct": -0.01453013965335122,
+      "cost_usd_delta_pct": -0.011726296887150128,
+      "mean_url_retention": 0.6619248283805412,
+      "mean_query_retention": 0.4833333333333332,
+      "expected_domain_gains": 0,
+      "expected_domain_losses": 0
+    },
+    {
+      "provider": "exa_auto",
+      "baseline": {
+        "completed": 20,
+        "usable_calls": 60,
+        "attempted_calls": 60,
+        "session_latency_ms": {
+          "p50": 18297,
+          "p90": 20957
+        },
+        "retrieval_latency_ms": {
+          "p50": 1648,
+          "p90": 2508
+        },
+        "expected_domain_rate": 1,
+        "input_tokens": 362818,
+        "output_tokens": 10134,
+        "model_estimated_usd": 1.240464,
+        "retrieval_estimated_usd": 0.42,
+        "estimated_usd": 1.660464
+      },
+      "repeat": {
+        "completed": 20,
+        "usable_calls": 60,
+        "attempted_calls": 60,
+        "session_latency_ms": {
+          "p50": 17170,
+          "p90": 20234
+        },
+        "retrieval_latency_ms": {
+          "p50": 1435,
+          "p90": 2162
+        },
+        "expected_domain_rate": 1,
+        "input_tokens": 367387,
+        "output_tokens": 9855,
+        "model_estimated_usd": 1.249986,
+        "retrieval_estimated_usd": 0.42,
+        "estimated_usd": 1.669986
+      },
+      "input_token_delta_pct": 0.012593090750734528,
+      "cost_usd_delta_pct": 0.005734541670280133,
+      "mean_url_retention": 0.6353384897905138,
+      "mean_query_retention": 0.39999999999999997,
+      "expected_domain_gains": 0,
+      "expected_domain_losses": 0
+    }
+  ]
+}

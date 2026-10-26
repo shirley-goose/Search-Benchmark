@@ -1,0 +1,43 @@
+{
+  "status": "canonical_complete",
+  "record_count": 80,
+  "task_count": 20,
+  "provider_count": 4,
+  "total_tool_calls": 240,
+  "total_input_tokens": 1696612,
+  "total_output_tokens": 40357,
+  "total_estimated_usd": 6.579668,
+  "providers": {
+    "deepseek_search": {
+      "completed": 20,
+      "tool_calls": 60,
+      "input_tokens": 439874,
+      "output_tokens": 9989,
+      "estimated_usd": 1.5144570000000004
+    },
+    "tencent_yuanbao_searchpro": {
+      "completed": 20,
+      "tool_calls": 60,
+      "input_tokens": 525651,
+      "output_tokens": 10095,
+      "model_estimated_usd": 1.728378,
+      "retrieval_estimated_usd": 0.179477,
+      "estimated_usd": 1.907855,
+      "price_usd_per_1000_calls": 2.99128
+    },
+    "exa_lite": {
+      "completed": 20,
+      "tool_calls": 60,
+      "input_tokens": 368269,
+      "output_tokens": 10139,
+      "estimated_usd": 1.4968920000000001
+    },
+    "exa_auto": {
+      "completed": 20,
+      "tool_calls": 60,
+      "input_tokens": 362818,
+      "output_tokens": 10134,
+      "estimated_usd": 1.660464
+    }
+  }
+}

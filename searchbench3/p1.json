@@ -1,0 +1,20 @@
+{
+  "configuration_status": "user_confirmed_2026-10-23",
+  "model": "claude-sonnet-4-5-20250929",
+  "max_tool_calls": 10,
+  "max_tokens": 900,
+  "session_timeout_seconds": 180,
+  "max_usd": 40,
+  "task_ids": [
+    "news_01",
+    "news_03",
+    "tech_01",
+    "tech_04",
+    "academic_01",
+    "academic_02",
+    "local_01",
+    "finance_01",
+    "zh_01",
+    "zh_02"
+  ]
+}

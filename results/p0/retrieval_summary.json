@@ -1,0 +1,39 @@
+[
+  {
+    "provider": "deepseek_search",
+    "attempted": 60,
+    "succeeded": 60,
+    "p50_ms": 565,
+    "p90_ms": 699,
+    "expected_domain_rate": 0.75,
+    "estimated_retrieval_cost_usd": 0.045
+  },
+  {
+    "provider": "tencent_yuanbao_searchpro",
+    "attempted": 60,
+    "succeeded": 60,
+    "p50_ms": 1005,
+    "p90_ms": 1230,
+    "expected_domain_rate": 0.75,
+    "estimated_retrieval_cost_usd": 0.1794768,
+    "price_usd_per_1000_calls": 2.99128
+  },
+  {
+    "provider": "exa_lite",
+    "attempted": 60,
+    "succeeded": 60,
+    "p50_ms": 582,
+    "p90_ms": 1066,
+    "expected_domain_rate": 1,
+    "estimated_retrieval_cost_usd": 0.24
+  },
+  {
+    "provider": "exa_auto",
+    "attempted": 60,
+    "succeeded": 60,
+    "p50_ms": 1333,
+    "p90_ms": 2063,
+    "expected_domain_rate": 0.9833333333333333,
+    "estimated_retrieval_cost_usd": 0.42
+  }
+]

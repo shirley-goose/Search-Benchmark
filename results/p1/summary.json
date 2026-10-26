@@ -1,0 +1,70 @@
+{
+  "configuration": {
+    "model": "claude-sonnet-4-5-20250929",
+    "temperature": 0,
+    "task_count": 10,
+    "provider_count": 4,
+    "max_searches_per_session": 10,
+    "retrieval_cache": "disabled",
+    "evidence_max_results": 10,
+    "evidence_max_snippet_chars": 600,
+    "tencent_price_usd_per_call": 0.00299128
+  },
+  "expected_sessions": 40,
+  "recorded_sessions": 40,
+  "results": [
+    {
+      "provider": "deepseek_search",
+      "sessions": 10,
+      "completed": 10,
+      "search_calls": 32,
+      "mean_calls": 3.2,
+      "p50_seconds": 17.759,
+      "p90_seconds": 28.84,
+      "input_tokens": 315087,
+      "output_tokens": 7998,
+      "retrieval_estimated_usd": 0,
+      "estimated_usd": 1.089231
+    },
+    {
+      "provider": "tencent_yuanbao_searchpro",
+      "sessions": 10,
+      "completed": 10,
+      "search_calls": 41,
+      "mean_calls": 4.1,
+      "p50_seconds": 20.87,
+      "p90_seconds": 32.067,
+      "input_tokens": 410162,
+      "output_tokens": 8794,
+      "retrieval_estimated_usd": 0.1226424971208926,
+      "estimated_usd": 1.4850384971208925
+    },
+    {
+      "provider": "exa_lite",
+      "sessions": 10,
+      "completed": 10,
+      "search_calls": 31,
+      "mean_calls": 3.1,
+      "p50_seconds": 17.375,
+      "p90_seconds": 27.82,
+      "input_tokens": 201073,
+      "output_tokens": 7673,
+      "retrieval_estimated_usd": 0,
+      "estimated_usd": 0.842314
+    },
+    {
+      "provider": "exa_auto",
+      "sessions": 10,
+      "completed": 10,
+      "search_calls": 24,
+      "mean_calls": 2.4,
+      "p50_seconds": 13.948,
+      "p90_seconds": 29.67,
+      "input_tokens": 131833,
+      "output_tokens": 6915,
+      "retrieval_estimated_usd": 0,
+      "estimated_usd": 0.6672239999999999
+    }
+  ],
+  "interpretation": "Search efficiency only; final answers were not independently scored against a complete gold-answer set."
+}

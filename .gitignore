@@ -1,0 +1,16 @@
+.DS_Store
+__MACOSX/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+node_modules/
+*.log
+
+# Live runs contain unpublished provider responses and model conversations.
+searchbench3/runs/
+evidence/
+
+# Local packaging artifacts.
+*.zip
